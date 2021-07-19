@@ -965,7 +965,7 @@ object Articles: Table(){
 data class Article (var id: String? = null, val title: String, val body: String, val author: String)
 ```
 
-- Podemos ver que há uma clara diferença em relação á tabela `Articles` que haviamos criado, dessa vez temos um atributo `author` que faz uma referência ao atributo `Articles.id`, Logo, sendo uma chave estrangeira. Isso foi feito pois esse atributo guarda o ID do artigo que criou aquele artigo, logo, é um dado que já existe no banco.
+- Podemos ver que há uma clara diferença em relação á tabela `Articles` que haviamos criado, dessa vez temos um atributo `author` que faz uma referência ao atributo `Users.id`, Logo, sendo uma chave estrangeira. Isso foi feito pois esse atributo guarda o ID do artigo que criou aquele artigo, logo, é um dado que já existe no banco.
 
 ### Adicionando Article ao banco de dados
 
